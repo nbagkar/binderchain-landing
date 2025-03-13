@@ -31,6 +31,10 @@ function scrollToFeatures() {
     document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
 }
 
+function scrollToPrototype() {
+    document.getElementById('prototype').scrollIntoView({ behavior: 'smooth' });
+}
+
 // Handle form submission
 async function handleSubmit(event) {
     event.preventDefault();
