@@ -106,9 +106,6 @@ button.secondary:hover {
     line-height: 1.2;
 }
 
-.hero h1 .chain {
-    color: var(--secondary-color);
-}
 
 .hero .subtitle {
     font-size: 1.25rem;
@@ -188,6 +185,44 @@ button.secondary:hover {
 .feature-card h3 {
     margin-bottom: 1rem;
     color: var(--text-color);
+}
+
+.prototype {
+    padding: 4rem 0;
+    background: var(--dark-bg);
+    text-align: center;
+}
+
+.prototype h2 {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+}
+
+.prototype p {
+    color: var(--gray-text);
+    margin-bottom: 2rem;
+}
+
+.prototype-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    background: var(--darker-bg);
+}
+
+.prototype-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0.75rem;
 }
 
 .signup {
