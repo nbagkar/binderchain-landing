@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinderChain - Secure Document Authentication on Blockchain</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABycnKvdHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/cnJyrwAAAAAAAAAAAAAAAAAAAAAAAAAAcnJy/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/3Jycv8AAAAAAAAAAAAAAAAAAAAAAAAAAHJycv/l5eX/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/+Xl5f9ycnL/AAAAAAAAAAAAAAAAAAAAAAAAAABycnL/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/cnJy/wAAAAAAAAAAAAAAAAAAAAAAAAAAcnJy/+Xl5f9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/5eXl/3Jycv8AAAAAAAAAAAAAAAAAAAAAAAAAAHJycv/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f9ycnL/AAAAAAAAAAAAAAAAAAAAAAAAAABycnL/5eXl/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv/l5eX/cnJy/wAAAAAAAAAAAAAAAAAAAAAAAAAAcnJy/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/3Jycv8AAAAAAAAAAAAAAAAAAAAAAAAAAHJycv/l5eX/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/+Xl5f9ycnL/AAAAAAAAAAAAAAAAAAAAAAAAAABycnL/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/cnJy/wAAAAAAAAAAAAAAAAAAAAAAAAAAcnJyr3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3JycvMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAP//AAD//wAA//8AAA==">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">BinderChain</div>
+            <div class="cta-button">
+                <button onclick="scrollToSignup()">Get Early Access</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Secure Document Authentication for the Digital Age</h1>
+            <p class="subtitle">Transform your document management with blockchain-powered security and verification</p>
+            <div class="cta-group">
+                <button class="primary" onclick="scrollToSignup()">Join the Waitlist</button>
+                <button class="secondary" onclick="scrollToFeatures()">Learn More</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose BinderChain?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Tamper-Proof Storage</h3>
+                    <p>Leverage blockchain technology for immutable document storage and verification</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Smart Contracts</h3>
+                    <p>Automated verification processes with built-in smart contract functionality</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Decentralized Access</h3>
+                    <p>Ensure data integrity with distributed storage and verification</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Enterprise Scalability</h3>
+                    <p>Built to handle growing document management needs for any organization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup" class="signup">
+        <div class="container">
+            <h2>Be the First to Know</h2>
+            <p>Join our waitlist for early access and updates</p>
+            <form id="emailForm" onsubmit="handleSubmit(event)">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <button type="submit">Join Waitlist</button>
+                </div>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BinderChain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
