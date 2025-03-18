@@ -4,31 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BinderChain - Digital Collectibles on Blockchain</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABycnKvdHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/cnJyrwAAAAAAAAAAAAAAAAAAAAAAAAAAcnJy/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/3Jycv8AAAAAAAAAAAAAAAAAAAAAAAAAAHJycv/l5eX/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/+Xl5f9ycnL/AAAAAAAAAAAAAAAAAAAAAAAAAABycnL/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/cnJy/wAAAAAAAAAAAAAAAAAAAAAAAAAAcnJy/+Xl5f9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/5eXl/3Jycv8AAAAAAAAAAAAAAAAAAAAAAAAAAHJycv/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f9ycnL/AAAAAAAAAAAAAAAAAAAAAAAAAABycnL/5eXl/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv/l5eX/cnJy/wAAAAAAAAAAAAAAAAAAAAAAAAAAcnJy/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/3Jycv8AAAAAAAAAAAAAAAAAAAAAAAAAAHJycv/l5eX/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/+Xl5f9ycnL/AAAAAAAAAAAAAAAAAAAAAAAAAABycnL/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/5eXl/+Xl5f/l5eX/cnJy/wAAAAAAAAAAAAAAAAAAAAAAAAAAcnJyr3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3JycvMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAP//AAD//wAA//8AAA==">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/logo.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
         <div class="container">
-            <div class="logo"><span class="binder">Binder</span><span class="chain">Chain</span></div>
-            <div class="cta-button">
-                <button onclick="scrollToSignup()">Get Early Access</button>
+            <div class="logo">
+                <img src="images/logo.svg" alt="BinderChain Logo" class="logo-image">
+                <span class="logo-text"><span class="binder">Binder</span><span class="chain">Chain</span></span>
+            </div>
+            <div class="nav-actions">
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#prototype">Demo</a>
+                </div>
+                <div class="cta-button">
+                    <button onclick="scrollToSignup()">Join Now</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <header class="hero">
+        <div class="hero-mesh">
+            <div class="hero-background"></div>
+            <div class="pattern pattern-1"></div>
+            <div class="pattern pattern-2"></div>
+            <div class="pattern pattern-3"></div>
+        </div>
         <div class="container">
-            <h1>Digital Collectibles on <span class="chain">Chain</span></h1>
-            <p class="subtitle">Create, trade, and manage unique digital assets with blockchain-powered authentication</p>
+            <h1>Redefining Digital Collectibles</h1>
+            <p class="subtitle">Securely create, trade, and showcase unique digital assets verified by blockchain technology</p>
+            <div class="tagline-box">
+                <span class="tagline">Early access available now</span>
+            </div>
             <div class="cta-group">
-                <button class="primary" onclick="scrollToSignup()">Join the Waitlist</button>
-                <button class="secondary" onclick="scrollToPrototype()">Try Now</button>
+                <button class="primary" onclick="scrollToSignup()">Get Early Access</button>
+                <button class="secondary" onclick="scrollToPrototype()">Try Demo</button>
             </div>
         </div>
     </header>
+
+    <section id="signup" class="signup">
+        <div class="container">
+            <h2>Join the Digital Revolution</h2>
+            <p>Get early access to create and trade unique digital collectibles</p>
+            <form id="emailForm" onsubmit="handleSubmit(event)">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <button type="submit">Join Waitlist</button>
+                </div>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </div>
+    </section>
 
     <section id="features" class="features">
         <div class="container">
@@ -72,19 +104,7 @@
         </div>
     </section>
 
-    <section id="signup" class="signup">
-        <div class="container">
-            <h2>Join the Digital Revolution</h2>
-            <p>Get early access to create and trade unique digital collectibles</p>
-            <form id="emailForm" onsubmit="handleSubmit(event)">
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                    <button type="submit">Join Waitlist</button>
-                </div>
-            </form>
-            <p id="formMessage" class="form-message"></p>
-        </div>
-    </section>
+
 
     <footer>
         <div class="container">
