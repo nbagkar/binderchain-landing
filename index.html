@@ -22,7 +22,7 @@
                     <a href="#prototype">Demo</a>
                 </div>
                 <div class="cta-button">
-                    <button onclick="scrollToSignup()">Join Now</button>
+                    <button onclick="document.getElementById('email').focus()">Join Now</button>
                 </div>
             </div>
         </div>
@@ -31,36 +31,39 @@
     <header class="hero">
         <div class="hero-mesh">
             <div class="hero-background"></div>
-            <div class="pattern pattern-1"></div>
-            <div class="pattern pattern-2"></div>
-            <div class="pattern pattern-3"></div>
+            <div class="cards-overlay"></div>
         </div>
         <div class="container">
-            <h1>Redefining Digital Collectibles</h1>
-            <p class="subtitle">Securely create, trade, and showcase unique digital assets verified by blockchain technology</p>
-            <div class="tagline-box">
-                <span class="tagline">Early access available now</span>
-            </div>
-            <div class="cta-group">
-                <button class="primary" onclick="scrollToSignup()">Get Early Access</button>
-                <button class="secondary" onclick="scrollToPrototype()">Try Demo</button>
+            <div class="hero-content">
+                <h1>Your Trading Cards,<br>Reimagined for Web3</h1>
+                <p class="subtitle">Transform your collectibles into blockchain-verified digital assets. Create, trade, and showcase your unique collections with confidence.</p>
+                <div class="key-features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Blockchain Verified</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Instant Trading</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-trophy"></i>
+                        <span>Exclusive Perks</span>
+                    </div>
+                </div>
+                <form id="emailForm" onsubmit="handleSubmit(event)" class="hero-form">
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Enter your email for early access" required>
+                        <button type="submit">Join Waitlist</button>
+                    </div>
+                    <p id="formMessage" class="form-message"></p>
+                </form>
+                <div class="cta-group">
+                    <button class="secondary" onclick="scrollToPrototype()">View Demo</button>
+                </div>
             </div>
         </div>
     </header>
-
-    <section id="signup" class="signup">
-        <div class="container">
-            <h2>Join the Digital Revolution</h2>
-            <p>Get early access to create and trade unique digital collectibles</p>
-            <form id="emailForm" onsubmit="handleSubmit(event)">
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                    <button type="submit">Join Waitlist</button>
-                </div>
-            </form>
-            <p id="formMessage" class="form-message"></p>
-        </div>
-    </section>
 
     <section id="features" class="features">
         <div class="container">
